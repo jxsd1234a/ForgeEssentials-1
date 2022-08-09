@@ -28,7 +28,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: binaries-${{ github.sha }}
-          path: ./build/libs/
+          path: ./build/*
       - uses: actions/upload-artifact@v2
         with:
           name: ts-files-${{ github.sha }}
